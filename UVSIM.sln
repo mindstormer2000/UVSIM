@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UVSIM", "UVSIM\UVSIM.csproj", "{0BF9D1FD-4EA0-42A7-97F7-EA54EFF8A886}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UVSim_UnitTests", "UVSim_UnitTests\UVSim_UnitTests.csproj", "{CC84D894-922F-43FB-B050-49C8F953B7AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BF9D1FD-4EA0-42A7-97F7-EA54EFF8A886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF9D1FD-4EA0-42A7-97F7-EA54EFF8A886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF9D1FD-4EA0-42A7-97F7-EA54EFF8A886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF9D1FD-4EA0-42A7-97F7-EA54EFF8A886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC84D894-922F-43FB-B050-49C8F953B7AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC84D894-922F-43FB-B050-49C8F953B7AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC84D894-922F-43FB-B050-49C8F953B7AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC84D894-922F-43FB-B050-49C8F953B7AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B625F42-983B-4BB9-BFBC-BD69A4DA95F5}
+	EndGlobalSection
+EndGlobal

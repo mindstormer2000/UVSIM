@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="UVSim_UnitTests.Memory_UnitTests.TestInstructionInsertion" /><Add Test="UVSim_UnitTests.Memory_UnitTests.TestMemoryInitialization" /><Add Test="UVSim_UnitTests.Memory_UnitTests.TestInstructionManipulation" /></Playlist>

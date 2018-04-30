@@ -1,0 +1,1949 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?pageSize=100 -->
+<html><head data-suburl=""><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+		<meta name="author" content="InnovatED">
+		<meta name="description" content="UVSim - Basic processor for use with education of computer architecture. Runs the Basic Machine Language (BasicML) ISA.">
+		<meta name="keywords" content="go, git, self-hosted, gogs">
+	
+	<meta name="referrer" content="no-referrer">
+	<meta name="_csrf" content="bu0bPq_72wkjp2MAkwcwFDpfaLc6MTUyMDAxNjczMDMzMTQ5MDUwMA==">
+	<meta name="_suburl" content="">
+	
+	
+	
+		<meta property="og:url" content="http://mordin.vanfleet.home/InnovatED/UVSim">
+		<meta property="og:type" content="object">
+		<meta property="og:title" content="InnovatED/UVSim">
+		<meta property="og:description" content="Basic processor for use with education of computer architecture. Runs the Basic Machine Language (BasicML) ISA.">
+		<meta property="og:image" content="http://mordin.vanfleet.home/avatars/2">
+	
+
+	<link rel="shortcut icon" href="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/favicon.png">
+
+	<script src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/jquery-1.11.3.min.js.download"></script>
+	<script src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/jquery.are-you-sure.js.download"></script>
+	<link rel="stylesheet" href="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/font-awesome.min.css">
+	<link rel="stylesheet" href="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/octicons.min.css">
+
+	
+	
+
+	
+
+	
+	<link rel="stylesheet" href="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/semantic-2.2.13.min.css">
+	<link rel="stylesheet" href="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/gogs.css">
+
+	
+	<script src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/semantic-2.2.13.min.js.download"></script>
+	<script src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/gogs.js.download"></script>
+
+	<title>Commit History · InnovatED/UVSim - Van Fleet Software Development</title>
+
+	<meta name="theme-color" content="#ff5343">
+
+	
+</head>
+<body>
+	<div class="full height">
+		<noscript>Please enable JavaScript in your browser!</noscript>
+
+		
+			<div class="following bar light">
+				<div class="ui container">
+					<div class="ui grid">
+						<div class="column">
+							<div class="ui top secondary menu">
+								<a class="item brand" href="http://vanfleet.ddns.net/">
+									<img class="ui mini image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/favicon.png">
+								</a>
+
+								
+									<a class="item" href="http://vanfleet.ddns.net/">Dashboard</a>
+									<a class="item" href="http://vanfleet.ddns.net/issues">Issues</a>
+									<a class="item" href="http://vanfleet.ddns.net/pulls">Pull Requests</a>
+								
+
+								<a class="item" href="http://vanfleet.ddns.net/explore/repos">Explore</a>
+								
+
+								
+									<div class="right menu">
+										<div class="ui dropdown head link jump item poping up" data-content="Create..." data-variation="tiny inverted" tabindex="0">
+											<span class="text">
+												<i class="octicon octicon-plus"><span class="sr-only">Create...</span></i>
+												<i class="octicon octicon-triangle-down"></i>
+											</span>
+											<div class="menu" tabindex="-1">
+												<a class="item" href="http://vanfleet.ddns.net/repo/create">
+													<i class="octicon octicon-plus"></i> New Repository
+												</a>
+												<a class="item" href="http://vanfleet.ddns.net/repo/migrate">
+													<i class="octicon octicon-repo-clone"></i> New Migration
+												</a>
+												
+												<a class="item" href="http://vanfleet.ddns.net/org/create">
+													<i class="octicon octicon-organization"></i> New Organization
+												</a>
+												
+											</div>
+										</div>
+
+										<div class="ui dropdown head link jump item poping up" data-content="User profile and more" data-variation="tiny inverted" tabindex="0">
+											<span class="text avatar">
+												<img class="ui small rounded image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1">
+												<span class="sr-only">User profile and more</span>
+												<i class="octicon octicon-triangle-down" tabindex="-1"></i>
+											</span>
+											<div class="menu" tabindex="-1">
+												<div class="ui header">
+													Signed in as <strong>bvanfleet</strong>
+												</div>
+
+												<div class="divider"></div>
+												<a class="item" href="http://vanfleet.ddns.net/bvanfleet">
+													<i class="octicon octicon-person"></i>
+													Your Profile
+												</a>
+												<a class=" item" href="http://vanfleet.ddns.net/user/settings">
+													<i class="octicon octicon-settings"></i>
+													Your Settings
+												</a>
+												<a class="item" target="_blank" href="https://gogs.io/docs" rel="noreferrer">
+													<i class="octicon octicon-question"></i>
+													Help
+												</a>
+												
+													<div class="divider"></div>
+
+													<a class=" item" href="http://vanfleet.ddns.net/admin">
+														<i class="icon settings"></i>
+														Admin Panel
+													</a>
+												
+
+												<div class="divider"></div>
+												<a class="item" href="http://vanfleet.ddns.net/user/logout">
+													<i class="octicon octicon-sign-out"></i>
+													Sign Out
+												</a>
+											</div>
+										</div>
+									</div>
+
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+
+
+<div class="repository commits">
+	<div class="header-wrapper">
+
+	<div class="ui container">
+		<div class="ui vertically padded grid head">
+			<div class="column">
+				<div class="ui header">
+					<div class="ui huge breadcrumb">
+						<i class="mega-octicon octicon-repo"></i>
+						<a href="http://vanfleet.ddns.net/InnovatED">InnovatED</a>
+						<div class="divider"> / </div>
+						<a href="http://vanfleet.ddns.net/InnovatED/UVSim">UVSim</a>
+						
+						
+					</div>
+
+					
+						<div class="ui right">
+							<div class="ui labeled button" tabindex="0">
+								<a class="ui basic button" href="http://vanfleet.ddns.net/InnovatED/UVSim/action/unwatch?redirect_to=%2fInnovatED%2fUVSim%2fcommits%2fmaster">
+									<i class="icon fa-eye"></i>Unwatch
+								</a>
+								<a class="ui basic label" href="http://vanfleet.ddns.net/InnovatED/UVSim/watchers">
+									5
+								</a>
+							</div>
+							<div class="ui labeled button" tabindex="0">
+								<a class="ui basic button" href="http://vanfleet.ddns.net/InnovatED/UVSim/action/star?redirect_to=%2fInnovatED%2fUVSim%2fcommits%2fmaster">
+									<i class="icon fa-star-o"></i>Star
+								</a>
+								<a class="ui basic label" href="http://vanfleet.ddns.net/InnovatED/UVSim/stars">
+									0
+								</a>
+							</div>
+							
+								<div class="ui labeled button" tabindex="0">
+									<a class="ui basic button " href="http://vanfleet.ddns.net/repo/fork/6">
+										<i class="octicon octicon-repo-forked"></i>Fork
+									</a>
+									<a class="ui basic label" href="http://vanfleet.ddns.net/InnovatED/UVSim/forks">
+										1
+									</a>
+								</div>
+							
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="ui tabs container">
+		<div class="ui tabular menu navbar">
+			
+				<a class="active item" href="http://vanfleet.ddns.net/InnovatED/UVSim">
+					<i class="octicon octicon-file-text"></i> Files
+				</a>
+			
+			
+				<a class=" item" href="http://vanfleet.ddns.net/InnovatED/UVSim/issues">
+					<i class="octicon octicon-issue-opened"></i> Issues <span class="ui blue small label">5</span>
+				</a>
+			
+			
+				<a class=" item" href="http://vanfleet.ddns.net/InnovatED/UVSim/pulls">
+					<i class="octicon octicon-git-pull-request"></i> Pull Requests <span class="ui gray small label">0</span>
+				</a>
+			
+			
+				<a class=" item" href="http://vanfleet.ddns.net/InnovatED/UVSim/wiki">
+					<i class="octicon octicon-book"></i> Wiki
+				</a>
+			
+			
+				<div class="right menu">
+					<a class=" item" href="http://vanfleet.ddns.net/InnovatED/UVSim/settings">
+						<i class="octicon octicon-tools"></i> Settings
+					</a>
+				</div>
+			
+		</div>
+	</div>
+	<div class="ui tabs divider"></div>
+
+</div>
+
+	<div class="ui container">
+		<div class="fitted item choose reference">
+	<div class="ui floating filter dropdown" data-no-results="No results found." tabindex="0">
+			<div class="ui basic small button">
+			<span class="text">
+				<i class="octicon octicon-git-branch"></i>
+				Branch:
+				<strong>master</strong>
+			</span>
+			<i class="dropdown icon" tabindex="0"><div class="menu" tabindex="-1"></div></i>
+		</div>
+		<div class="menu" tabindex="-1">
+			<div class="ui icon search input">
+				<i class="filter icon"></i>
+				<input name="search" placeholder="Filter branch or tag...">
+			</div>
+			<div class="header">
+				<div class="ui grid">
+					<div class="two column row">
+						<a class="reference column" href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?pageSize=100#" data-target="#branch-list">
+							<span class="text black">
+								Branches
+							</span>
+						</a>
+						<a class="reference column" href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?pageSize=100#" data-target="#tag-list">
+							<span class="text ">
+								Tags
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="branch-list" class="scrolling menu">
+				
+					<div class="item selected" data-url="/InnovatED/UVSim/commits/master">master</div>
+				
+			</div>
+			<div id="tag-list" class="scrolling menu" style="display: none">
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+		<h4 class="ui top attached header">
+	
+		Commit History
+	
+	
+		<div class="ui right">
+			<form action="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master/search">
+				<div class="ui tiny search input">
+					<input name="q" placeholder="Search commits" value="" autofocus="">
+				</div>
+				<button class="ui black tiny button" data-panel="#add-deploy-key-panel">Find</button>
+			</form>
+		</div>
+	
+</h4>
+
+
+	<div class="ui attached table segment">
+		<table class="ui very basic striped fixed table single line" id="commits-table">
+			<thead>
+				<tr>
+					<th class="four wide">Author</th>
+					<th class="nine wide message"><span class="sha">SHA1</span> Message</th>
+					<th class="three wide right aligned">Date</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/f5b71d84c8be5a6a738e4c35e0b5265d32f6c3be">f5b71d84c8</a>
+							
+							<span class=" has-emoji">Fixed it again</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 02 Mar 2018 12:58:12 MST" data-variation="inverted tiny">7 hours ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/fdba4ef6af414089a888d0227571072dae97339a">fdba4ef6af</a>
+							
+							<span class=" has-emoji">NO IT FRIKKING WORKS NO THANKS TO BOB</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 02 Mar 2018 12:56:59 MST" data-variation="inverted tiny">7 hours ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/5185a886960eea8731c12d0e8d220245938b3186">5185a88696</a>
+							
+							<span class=" has-emoji">Changed memory output and tested test cases.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 02 Mar 2018 12:26:50 MST" data-variation="inverted tiny">7 hours ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/be520544f80c11292d6ad2c9106aeebe7f24c9cc">be520544f8</a>
+							
+							<span class=" has-emoji">Line 2 should have been 1010 not 1008</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 02 Mar 2018 12:15:10 MST" data-variation="inverted tiny">7 hours ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/35c681e743c5286df2069b8af5598ddf67e50fe9">35c681e743</a>
+							
+							<span class=" has-emoji">Updated test case three</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 02 Mar 2018 12:13:21 MST" data-variation="inverted tiny">8 hours ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/dfbf994bb4a4fe9a7702daa22ebec7a27e8b7570">dfbf994bb4</a>
+							
+							<span class="grey text  has-emoji">Merge branch 'master' of http://vanfleet.ddns.net/InnovatED/UVSim</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 02 Mar 2018 12:08:11 MST" data-variation="inverted tiny">8 hours ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/159f87bf55738b0cfc5c69273caee17322677eb3">159f87bf55</a>
+							
+							<span class=" has-emoji">REMOVED STUFF</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 02 Mar 2018 12:08:02 MST" data-variation="inverted tiny">8 hours ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/b293da7415f6e032c9ced0fada738a15" alt="">&nbsp;&nbsp;bvanfleet
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/9a8bd270fa1747f98e73e4b01c2608a3fa3ac54a">9a8bd270fa</a>
+							
+							<span class=" has-emoji">Updated README.md to include contributors</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 02 Mar 2018 11:22:40 MST" data-variation="inverted tiny">8 hours ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">Brad Van Fleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/e64205deeb730765e6c0d1ca7f7f3332507346a8">e64205deeb</a>
+							
+							<span class=" has-emoji">Update 'README.md'</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 02 Mar 2018 11:21:24 MST" data-variation="inverted tiny">8 hours ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/b293da7415f6e032c9ced0fada738a15" alt="">&nbsp;&nbsp;bvanfleet
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/54cf268825d0ba59ac54f8defc1ec4a46a21abd6">54cf268825</a>
+							
+							<span class=" has-emoji">Updated Add method to contain pseudo code for Add method.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 02 Mar 2018 11:09:01 MST" data-variation="inverted tiny">9 hours ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/b293da7415f6e032c9ced0fada738a15" alt="">&nbsp;&nbsp;bvanfleet
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/cee7a07af403bc636a2c558c5895b14fb6c2fbcb">cee7a07af4</a>
+							
+							<span class=" has-emoji">Updated executable used by grader</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 02 Mar 2018 11:01:20 MST" data-variation="inverted tiny">9 hours ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/b293da7415f6e032c9ced0fada738a15" alt="">&nbsp;&nbsp;bvanfleet
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/671b0c4ba232048cd4897e21e8aae661ac3a978d">671b0c4ba2</a>
+							
+							<span class=" has-emoji">Fixed Memory method referenced in Processor</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 02 Mar 2018 11:00:55 MST" data-variation="inverted tiny">9 hours ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/40e1f452b0c5bebb019dd55d097461b490f15a40">40e1f452b0</a>
+							
+							<span class="grey text  has-emoji">Merge branch 'master' of http://vanfleet.ddns.net/InnovatED/UVSim</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 02 Mar 2018 10:54:30 MST" data-variation="inverted tiny">9 hours ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/facbe665b464bbafed5cfae29f3efea4356dd4ea">facbe665b4</a>
+							
+							<span class=" has-emoji">Fixed Branch function</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 02 Mar 2018 10:47:37 MST" data-variation="inverted tiny">9 hours ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">Brad Van Fleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/1717cc1c484285b39355ad7acd65aef9d6bb2c0b">1717cc1c48</a>
+							
+							<span class=" has-emoji">Added Sprint and Backlog document showing work performed to finish this milestone</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 02 Mar 2018 08:51:51 MST" data-variation="inverted tiny">11 hours ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">Brad Van Fleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/3947a69b3fd84c68dd01259960ac5c7ccea72221">3947a69b3f</a>
+							
+							<span class=" has-emoji">Uploaded HTML copy of Commit history showing which users worked on the project</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 02 Mar 2018 08:51:20 MST" data-variation="inverted tiny">11 hours ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">Brad Van Fleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/359fb4a7ae16b14bd490864765baa56fb58a0194">359fb4a7ae</a>
+							
+							<span class=" has-emoji">Uploaded screenshots for use with README.md file and to satisfy milestone 1 deliverables.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 28 Feb 2018 23:29:22 MST" data-variation="inverted tiny">1 day ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">Brad Van Fleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/c76d121af8d69251cdf79878bd3d28e8ff2ff065">c76d121af8</a>
+							
+							<span class="grey text  has-emoji">Merge branch 'master' of http://mordin.vanfleet.home/InnovatED/UVSim</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 28 Feb 2018 23:22:46 MST" data-variation="inverted tiny">1 day ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">Brad Van Fleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/4f6bdbf07918e835b8ce83106c3e2d037f7c13e6">4f6bdbf079</a>
+							
+							<span class=" has-emoji">Added updated PDF version of use case for users without Visio installed.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 28 Feb 2018 23:21:34 MST" data-variation="inverted tiny">1 day ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">Brad Van Fleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/ec1457a1716c1328655611f719b628814427a119">ec1457a171</a>
+							
+							<span class=" has-emoji">Update 'README.md'</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 28 Feb 2018 23:18:33 MST" data-variation="inverted tiny">1 day ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/b293da7415f6e032c9ced0fada738a15" alt="">&nbsp;&nbsp;bvanfleet
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/8f9300353ea880d35da66c729177e63d58a696ad">8f9300353e</a>
+							
+							<span class=" has-emoji">Uploading the release for the project grader to pull and work with</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 28 Feb 2018 17:00:24 MST" data-variation="inverted tiny">2 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/b293da7415f6e032c9ced0fada738a15" alt="">&nbsp;&nbsp;bvanfleet
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/cd252edd114b08947ae27cbf2089283823208843">cd252edd11</a>
+							
+							<span class=" has-emoji">Updated the Memory object to use more concise parameter and method names. Also added a Clear function for use with MainForm.ResetFormButton.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 28 Feb 2018 16:59:56 MST" data-variation="inverted tiny">2 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/b293da7415f6e032c9ced0fada738a15" alt="">&nbsp;&nbsp;bvanfleet
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/6f5e7e4d34bc9119743390491adcb1033a67c640">6f5e7e4d34</a>
+							
+							<span class="grey text  has-emoji">Merge branch 'master' of http://vanfleet.ddns.net/InnovatED/UVSim</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 28 Feb 2018 16:20:37 MST" data-variation="inverted tiny">2 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/b293da7415f6e032c9ced0fada738a15" alt="">&nbsp;&nbsp;bvanfleet
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/45e67c9b88dc62341155673a8c5826d20f378e75">45e67c9b88</a>
+							
+							<span class=" has-emoji">Removing more files.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 28 Feb 2018 16:18:33 MST" data-variation="inverted tiny">2 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/b293da7415f6e032c9ced0fada738a15" alt="">&nbsp;&nbsp;bvanfleet
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/0cfc4a15c080c497fb2be96403d54a3d2ba33f44">0cfc4a15c0</a>
+							
+							<span class=" has-emoji">Removing some files, "as per friggin usual."</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 28 Feb 2018 16:16:19 MST" data-variation="inverted tiny">2 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/96920e6030d9f011ce80888f1081471721f5cb56">96920e6030</a>
+							
+							<span class="grey text  has-emoji">Merge branch 'master' of http://vanfleet.ddns.net/InnovatED/UVSim</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 28 Feb 2018 12:35:54 MST" data-variation="inverted tiny">2 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/7a1773951c6cf7f1b4f67ccfbd3bd2e01c84883d">7a1773951c</a>
+							
+							<span class=" has-emoji">Fixed contributors.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 28 Feb 2018 12:35:42 MST" data-variation="inverted tiny">2 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">Brad Van Fleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/de35e3abb1d51202fe85c6f0e591e62492d66b0a">de35e3abb1</a>
+							
+							<span class=" has-emoji">Remove old test cases</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 28 Feb 2018 12:08:21 MST" data-variation="inverted tiny">2 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">Brad Van Fleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/a3b10ee4cf2c7c9736b37a269b4bf80e0a70ad7f">a3b10ee4cf</a>
+							
+							<span class=" has-emoji">Delete Use Case Diagram pdf document. It needs to be updated as it's obselete.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 28 Feb 2018 12:06:28 MST" data-variation="inverted tiny">2 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">Brad Van Fleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/efd338d0fb46c3bd48e4fe4b21cd41852296205f">efd338d0fb</a>
+							
+							<span class=" has-emoji">Removed unneeded .vs files. I've since updated .gitignore to attempt to prevent these from being uploaded in the first place.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 28 Feb 2018 11:49:00 MST" data-variation="inverted tiny">2 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">Brad Van Fleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/afbb3aa2a896ed85ae2b8e964d6a703b106fea3b">afbb3aa2a8</a>
+							
+							<span class=" has-emoji">Renamed test files to use the Basic Markup Language file extendion `.bml`</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 28 Feb 2018 11:48:08 MST" data-variation="inverted tiny">2 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">Brad Van Fleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/031bd9449f7300c3087349bb90ef05348bf1c58a">031bd9449f</a>
+							
+							<span class=" has-emoji">Updated Configuration files and README to allow the use of a Release folder for when we officially publish (like tonight). I also updated the README to provide instructions for using our application.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 28 Feb 2018 11:47:25 MST" data-variation="inverted tiny">2 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/a0f3c7945db8bc50578f77ff1ea67156f0bc1840">a0f3c7945d</a>
+							
+							<span class=" has-emoji">+</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 26 Feb 2018 15:33:22 MST" data-variation="inverted tiny">4 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/bd748478aa4437a6420f0e18af96ca4fed7f2028">bd748478aa</a>
+							
+							<span class=" has-emoji">Removed 93 0000s that were unnecessary.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 26 Feb 2018 15:31:41 MST" data-variation="inverted tiny">4 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/1ccddef5b83798c570d8114ae362b1bc75bc3723">1ccddef5b8</a>
+							
+							<span class=" has-emoji">Renamed the test docs to .txt files</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 26 Feb 2018 15:30:41 MST" data-variation="inverted tiny">4 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/41bf5b02a3214d5105e4613ba1027b59aab91e4e">41bf5b02a3</a>
+							
+							<span class=" has-emoji">Memory_ES_REFERENCE is discarded because Memory.cs has been implemented</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 26 Feb 2018 15:04:46 MST" data-variation="inverted tiny">4 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/dd7a4cf663d80b507ba585e69bfd62b6" alt="">&nbsp;&nbsp;Riley Giles
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/4db1197191bc90db2a4478293e13447131ac2381">4db1197191</a>
+							
+							<span class=" has-emoji">Implemented the memory, ran a test case, seems to be working just fine from my standpoint.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 26 Feb 2018 14:52:51 MST" data-variation="inverted tiny">4 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/1f872a0cfc47a185b0409b4079bf484b4aa28fd3">1f872a0cfc</a>
+							
+							<span class=" has-emoji">Subtraction was set to not use addition at all(sorry brad). And the processor now runs with the ALU functions modifying the Accumulator.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 26 Feb 2018 13:59:16 MST" data-variation="inverted tiny">4 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/442be574e47cb7f314967e55c3175d79ba2c467a">442be574e4</a>
+							
+							<span class="grey text  has-emoji">Merge branch 'master' of http://vanfleet.ddns.net/InnovatED/UVSim</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 26 Feb 2018 13:30:04 MST" data-variation="inverted tiny">4 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/cea726409ede1c1bad4f618c8f488749d31ea32a">cea726409e</a>
+							
+							<span class=" has-emoji">Changed Test 2 to be formatted right. Added Output of memDump. Fixed error with storing data, Made processor run faster(100 instead of 1000), Fixed main form threading issue.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 26 Feb 2018 13:28:36 MST" data-variation="inverted tiny">4 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/d66bf0ec25f9a5b5f44db8ab13d122eb26f5f7cd">d66bf0ec25</a>
+							
+							<span class="grey text  has-emoji">Merge branch 'master' of http://vanfleet.ddns.net/InnovatED/UVSim</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 26 Feb 2018 12:49:16 MST" data-variation="inverted tiny">4 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/618e55e69b52a439702dc17e5b42a4e846fa2869">618e55e69b</a>
+							
+							<span class=" has-emoji">Renamed GuiInteract. Updated the processor code to address a couple of potential bugs. Also adjusted the Processor and MainForm for the GuiInteract update.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 26 Feb 2018 12:49:05 MST" data-variation="inverted tiny">4 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/39eca103c8f29a3a9e7885a5bc1c9d81e5debf16">39eca103c8</a>
+							
+							<span class=" has-emoji">Added -</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 26 Feb 2018 12:38:36 MST" data-variation="inverted tiny">4 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1c52ebf1f060a1781b3cc35bb14e3f66" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/emilystarks">emstarks</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/dee0b32d1ae84fe99198c7e346651b3ded457817">dee0b32d1a</a>
+							
+							<span class=" has-emoji">Scrum vs Kanban paper</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Sun, 25 Feb 2018 16:58:58 MST" data-variation="inverted tiny">5 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1c52ebf1f060a1781b3cc35bb14e3f66" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/emilystarks">emstarks</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/a231c278a698747f44786c5ea922483e73bad0c1">a231c278a6</a>
+							
+							<span class=" has-emoji">Adding meeting log</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Sun, 25 Feb 2018 13:12:16 MST" data-variation="inverted tiny">5 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1c52ebf1f060a1781b3cc35bb14e3f66" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/emilystarks">emstarks</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/5cfcc5e0d730d656ed2a7ed7920a5444795cf0d7">5cfcc5e0d7</a>
+							
+							<span class=" has-emoji">Changing input to accept +#### or -####; fixing input form closing issue; merging display functions into one that outputs into text box on form; cleaning up memory display</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Sun, 25 Feb 2018 13:01:17 MST" data-variation="inverted tiny">5 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/0acf9def2c5434f115ec515fcaf42d4ada9264d5">0acf9def2c</a>
+							
+							<span class=" has-emoji">Just other stuff</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Sun, 25 Feb 2018 08:26:24 MST" data-variation="inverted tiny">5 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/0c973fd82847dd2c9b190f4fece1dcbc1be53ac5">0c973fd828</a>
+							
+							<span class=" has-emoji">Added - GUI updating, Thread overloading (sorry I had to manipulate the GUI code a little.), and tested read. Will be running tons of tests with everything else.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Sun, 25 Feb 2018 08:25:37 MST" data-variation="inverted tiny">5 days ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/37c45addd84e4861bd5bc1b7631efe29873e7d54">37c45addd8</a>
+							
+							<span class=" has-emoji">Updated the GUIInter class to a GuiInteract struct to remove the interface from the Processor code.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 23 Feb 2018 19:38:12 MST" data-variation="inverted tiny">1 week ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/94fb52fbf4c842c5bd9e07fb42353450f4a73448">94fb52fbf4</a>
+							
+							<span class="grey text  has-emoji">Merged changes from origin/master to local/master to update local repository.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 23 Feb 2018 12:13:06 MST" data-variation="inverted tiny">1 week ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/41324b4095a19d45672cd648d9dd7ac36ed77102">41324b4095</a>
+							
+							<span class=" has-emoji">Removed redundant class code for Processor.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 23 Feb 2018 12:12:02 MST" data-variation="inverted tiny">1 week ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/8de3b606d311a66700775d5126195551956c1e93">8de3b606d3</a>
+							
+							<span class=" has-emoji">Updated appearance and documentation of Processor code.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 23 Feb 2018 12:11:09 MST" data-variation="inverted tiny">1 week ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/473f43603bf68ddc83e03ecc2ba9e49c539afb91">473f43603b</a>
+							
+							<span class=" has-emoji">Added - GuiInter(face) class</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 23 Feb 2018 07:02:37 MST" data-variation="inverted tiny">1 week ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/7ad2b39e3bab5278ea6350eb9a6e0fab9afbfeff">7ad2b39e3b</a>
+							
+							<span class=" has-emoji">Added - Read Capabilities</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Thu, 22 Feb 2018 10:16:10 MST" data-variation="inverted tiny">1 week ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/171de58d8caef7caaffb3a65ca198400654ecbf6">171de58d8c</a>
+							
+							<span class="grey text  has-emoji">Merge branch 'master' of http://vanfleet.ddns.net/InnovatED/UVSim</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 21 Feb 2018 12:54:02 MST" data-variation="inverted tiny">1 week ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/f60d39e040d8393e82791bb01caef3bf5ece6be8">f60d39e040</a>
+							
+							<span class=" has-emoji">Added - Random pieces of code.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 21 Feb 2018 12:49:17 MST" data-variation="inverted tiny">1 week ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/175a19ee7e7ade91cf2c36ca51c76dd9a34cb789">175a19ee7e</a>
+							
+							<span class=" has-emoji">Performed some code cleanup. Removed unneeded Processor constructor parameter. Removed duplicate object creation, and replaced with breaks. Removed exception being thrown in Decode, following code by contract. Updated changes in associated places in form.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 21 Feb 2018 12:47:20 MST" data-variation="inverted tiny">1 week ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1c52ebf1f060a1781b3cc35bb14e3f66" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/emilystarks">Emily Starks</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/c3599e8a3dfb709dd2590da70ffc663150529cc4">c3599e8a3d</a>
+							
+							<span class="grey text  has-emoji">Merge branch 'EStarks_-_Upload'</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 21 Feb 2018 12:17:29 MST" data-variation="inverted tiny">1 week ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/ff1c41dc5416d83c47d5ce4618cd883a08721b22">ff1c41dc54</a>
+							
+							<span class=" has-emoji">Remove redundant files for prototypes and individual user preferences for IDE.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 21 Feb 2018 12:13:32 MST" data-variation="inverted tiny">1 week ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/231ea56e475e93eea62d8c308ba83a7dd28e2aaa">231ea56e47</a>
+							
+							<span class="grey text  has-emoji">Merge branch 'master' of http://vanfleet.ddns.net/emilystarks/UVSim into EStarks_-_Upload</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 21 Feb 2018 12:12:17 MST" data-variation="inverted tiny">1 week ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/2113d2ed4c9aac43433b5aa52427a723" alt="">&nbsp;&nbsp;Emily Starks
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/afad43ca8606b0a4f0dfb715a3f5ea9e5f92956d">afad43ca86</a>
+							
+							<span class=" has-emoji">Stop validating opcode in GUI code, use "+0000" instead of null for empty memory values, add accumulator display function, and add generic message/error message display function</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 19 Feb 2018 20:14:33 MST" data-variation="inverted tiny">1 week ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/3d16aa4c92e96cf17391bcfc1e5261433a97dfd3">3d16aa4c92</a>
+							
+							<span class=" has-emoji">Added - clarifying comments</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Sat, 17 Feb 2018 08:43:39 MST" data-variation="inverted tiny">1 week ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/e7d1fa53bd8ac5ec7cf6761f6b92488f2e126b3e">e7d1fa53bd</a>
+							
+							<span class=" has-emoji">Added - Connection to Processor! YAY it works. Thanks bob</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 16 Feb 2018 13:20:42 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/56a16f06d0ef9ce3f1d596bbda762d2faa5cf030">56a16f06d0</a>
+							
+							<span class="grey text  has-emoji">Merge branch 'master' of http://vanfleet.ddns.net/InnovatED/UVSim</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 16 Feb 2018 12:52:47 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/154bfcb98f05a47b3e1eae1ebfb7561b593b8aa5">154bfcb98f</a>
+							
+							<span class=" has-emoji">Added - Processor connections.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 16 Feb 2018 12:52:19 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/8fab3f51dfb5ed0ffb2fb0cdc44076afde1702f0">8fab3f51df</a>
+							
+							<span class=" has-emoji">Added image and corrected Program launch error.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 16 Feb 2018 12:47:48 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/93baeb4b2d62c70929c4b5c387fdfe22096ee2c5">93baeb4b2d</a>
+							
+							<span class=" has-emoji">Removed redundant sln file and cleaned up additional ignored files.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 16 Feb 2018 12:35:07 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/36d7438d2c8752803de96f2fefcf24eb29068738">36d7438d2c</a>
+							
+							<span class=" has-emoji">Cleaned up unneeded data</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 16 Feb 2018 12:23:31 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/47905920f1cbfcede3ff035e9a27d5d2ddc48152">47905920f1</a>
+							
+							<span class="grey text  has-emoji">Merge branch 'master' of http://vanfleet.ddns.net/emilystarks/UVSim into EStarks_-_Upload</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 16 Feb 2018 12:21:25 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/e3a026a66a94bc4861adce89b97c88311736503a">e3a026a66a</a>
+							
+							<span class="grey text  has-emoji">Merge branch 'master' of http://vanfleet.ddns.net/InnovatED/UVSim</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 16 Feb 2018 12:19:27 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/9ffce14021539a0a8164c9a9d852e6ac2ee9fc66">9ffce14021</a>
+							
+							<span class=" has-emoji">Added -</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 16 Feb 2018 12:19:07 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/2113d2ed4c9aac43433b5aa52427a723" alt="">&nbsp;&nbsp;Emily Starks
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/6b4841666a1909d6126074515c73b0d0677d7954">6b4841666a</a>
+							
+							<span class=" has-emoji">Adding new GUI, also memory/processor mock-up code for reference</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 16 Feb 2018 12:18:31 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/190d3d721c2061f293185b8a34581363b94b3639">190d3d721c</a>
+							
+							<span class=" has-emoji">Added -</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 16 Feb 2018 12:13:24 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/7c7292f5a1ddb7c32f9c61e4355ba65a36200092">7c7292f5a1</a>
+							
+							<span class=" has-emoji">Added - I reverted to the old beta processor as it works well. Then I replaced the code with the code provided by Brad then I edited to make it work.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Fri, 16 Feb 2018 07:58:13 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/b293da7415f6e032c9ced0fada738a15" alt="">&nbsp;&nbsp;bvanfleet
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/6e8b0e5db15bc611fdc69dda5ae9bcabaf60b225">6e8b0e5db1</a>
+							
+							<span class=" has-emoji">Restructure the repository to remove redundant folder and become more compliant with .gitignore</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Thu, 15 Feb 2018 15:33:20 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">Brad Van Fleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/f213e07f414d9bd5b17d12a5c080033f10ae3cf1">f213e07f41</a>
+							
+							<span class=" has-emoji">Update 'CHANGELOG.md'</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 14 Feb 2018 14:05:57 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/57ade53427ca9c69577d56b518d1a860a7594424">57ade53427</a>
+							
+							<span class=" has-emoji">Updated to match latest commit from remote repository. Added additional regions in Decode to organize general cases.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 14 Feb 2018 14:01:41 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/4e6c91a3085eba1c8d9256d0097d31344a263ccb">4e6c91a308</a>
+							
+							<span class="grey text  has-emoji">Merge branch 'master' of http://vanfleet.ddns.net/InnovatED/UVSim</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 14 Feb 2018 13:52:32 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/121fafbf5acee2e0d6137860dc71a0a150208673">121fafbf5a</a>
+							
+							<span class=" has-emoji">Cleaned up documentation and added region to organize ALU cases in decode function.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 14 Feb 2018 13:52:23 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/13658b30288dca03031a1f2a3841c3b218c8a566">13658b3028</a>
+							
+							<span class=" has-emoji">Refactored Prototype Processor code to include Decode function to handle processing commands. Also cleaned up names for potentially improved readability.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 14 Feb 2018 13:48:25 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/a9c1e6fb39fc15b4d9f1d4510f99448b3f5a9c19">a9c1e6fb39</a>
+							
+							<span class=" has-emoji">Cleaned and documented ALU class object</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 14 Feb 2018 13:47:37 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/cf057dfb56d4e7a3ec5e638c7166e9f6d8c11bea">cf057dfb56</a>
+							
+							<span class=" has-emoji">Added ALU class for use with the processor. Stub functions have been implemented.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 14 Feb 2018 13:17:40 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/a6d7398de8b69f87a0e55033db95c8888072409f">a6d7398de8</a>
+							
+							<span class=" has-emoji">Added - Three test cases</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Wed, 14 Feb 2018 12:21:51 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/3d714be8cf209b9ada4a9f3ddd3712aa21cc32ea">3d714be8cf</a>
+							
+							<span class=" has-emoji">Added - processor main variables</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 12 Feb 2018 12:54:50 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/e0350007bf26b8f6428a06733f4c4ed6928256c6">e0350007bf</a>
+							
+							<span class=" has-emoji">Updated VSDX to fix mistyping</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 12 Feb 2018 12:51:36 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/6333ef90c43e81af7137c54c413894909bcd7e1d">6333ef90c4</a>
+							
+							<span class="grey text  has-emoji">Merge branch 'master' of http://vanfleet.ddns.net/InnovatED/UVSim</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 12 Feb 2018 12:44:17 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">bvanfleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/a392f0d297cfed685dbce2e4bba2283bbc6188b5">a392f0d297</a>
+							
+							<span class=" has-emoji">Uploaded Use Case Diagrams</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 12 Feb 2018 12:43:03 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/a36510e0d5ea3766bb90f9c043e995f8781d4cc8">a36510e0d5</a>
+							
+							<span class=" has-emoji">Added - Processor.cs</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 12 Feb 2018 12:39:30 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/5e73ce37409b2aa3786ef9758435bde96c1f998f">5e73ce3740</a>
+							
+							<span class=" has-emoji">Added - One of the test txt files. The uvsim winform.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Mon, 12 Feb 2018 12:29:23 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/8a085fb1ae31fc4fc1904d557eec8ae6" alt="">&nbsp;&nbsp;CaidenKehrer
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/d284b015a3e3a90076d37db525ea9681d67bfd12">d284b015a3</a>
+							
+							<span class=" has-emoji">Added - Changelog.</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Sun, 11 Feb 2018 06:50:16 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+					<tr>
+						<td class="author">
+							
+								<img class="ui avatar image" src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/1" alt="">&nbsp;&nbsp;<a href="http://vanfleet.ddns.net/bvanfleet">Brad Van Fleet</a>
+							
+						</td>
+
+						<td class="message collapsing">
+							
+							
+								<a rel="nofollow" class="ui sha label" href="http://vanfleet.ddns.net/InnovatED/UVSim/commit/76ed8f8424cc42a7c073bf6a018ef96cc6e1881a">76ed8f8424</a>
+							
+							<span class=" has-emoji">Initial commit</span>
+						</td>
+						<td class="grey text right aligned"><span class="time-since poping up" title="" data-content="Sat, 10 Feb 2018 20:08:39 MST" data-variation="inverted tiny">2 weeks ago</span></td>
+					</tr>
+				
+			</tbody>
+		</table>
+	</div>
+
+
+
+
+	</div>
+</div>
+
+	</div>
+	<footer>
+		<div class="ui container">
+			<div class="ui left">
+				© 2017 Gogs Version: 0.11.34.1122 Page: <strong>14321ms</strong> Template: <strong>25ms</strong>
+			</div>
+			<div class="ui right links">
+				
+				<div class="ui language bottom floating slide up dropdown link item" tabindex="0">
+					<i class="world icon"></i>
+					<div class="text">English</div>
+					<div class="menu" tabindex="-1">
+						
+							<a class="item active selected" href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?pageSize=100#">English</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=zh-CN">简体中文</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=zh-HK">繁體中文（香港）</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=zh-TW">繁體中文（臺灣）</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=de-DE">Deutsch</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=fr-FR">français</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=nl-NL">Nederlands</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=lv-LV">latviešu</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=ru-RU">русский</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=ja-JP">日本語</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=es-ES">español</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=pt-BR">português do Brasil</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=pl-PL">polski</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=bg-BG">български</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=it-IT">italiano</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=fi-FI">suomi</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=tr-TR">Türkçe</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=cs-CZ">čeština</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=sr-SP">српски</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=sv-SE">svenska</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=ko-KR">한국어</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=gl-ES">galego</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=uk-UA">українська</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=en-GB">English (United Kingdom)</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=hu-HU">Magyar</a>
+						
+							<a class="item " href="http://vanfleet.ddns.net/InnovatED/UVSim/commits/master?lang=sk-SK">slovenský</a>
+						
+					</div>
+				</div>
+				<a href="http://vanfleet.ddns.net/assets/librejs/librejs.html" style="display:none" data-jslicense="1">Javascript Licenses</a>
+				<a target="_blank" href="https://gogs.io/">Website</a>
+				<span class="version">Go1.9.2</span>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+<script src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/emojify-1.1.0.min.js.download"></script>
+<script src="./Commit History · InnovatED_UVSim - Van Fleet Software Development_files/clipboard-1.5.9.min.js.download"></script>
+
+
+
+
+</body></html>

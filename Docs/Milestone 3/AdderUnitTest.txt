@@ -1,0 +1,34 @@
+using System;
+using UVSim.CPU;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace UVSim_UnitTests
+{
+    /// <summary>
+    /// Represents the test cases that the ALU needs to pass to become verified
+    /// </summary>
+    [TestClass]
+    public class ALU_UnitTests
+    {
+        /// <summary>
+        /// Tests that the ALU can add positive numbers
+        /// </summary>
+        [TestMethod, TestCategory("Weekly")]
+        public void TestAddPositive()
+        {
+			// Arrange
+            int inputA = 5;
+            int inputB = 3;
+            const int EXPECTED = 8;
+            ArithmeticLogicUnit alu = new ArithmeticLogicUnit()
+            {
+                InputA = inputA,
+                InputB = inputB
+            };
+			// Act
+            alu.Add();
+			// Assert
+            Assert.AreEqual(EXPECTED, alu.Output);
+        }
+	}
+}
